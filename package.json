@@ -7,9 +7,11 @@
     "start": "node dist/server.js",
     "build-ts": "tsc",
     "test": "jest --forceExit --coverage --verbose",
-    "prettier": "prettier -l 'src/**/*'",
+    "prettier": "prettier 'src/**/*'",
+    "prettier:ci": "npm run prettier -- -l",
     "prettier:fix": "npm run prettier -- --write",
     "tslint": "tslint -c tslint.json 'src/**/*.ts*'",
+    "tslint:ci": "npm run tslint",
     "tslint:fix": "npm run tslint -- --fix"
   },
   "keywords": [],
