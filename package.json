@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "build-ts": "tsc",
-    "test": "jest --forceExit --coverage --verbose",
+    "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
     "prettier": "prettier 'src/**/*'",
     "prettier:ci": "npm run prettier -- -l",
     "prettier:fix": "npm run prettier -- --write",
