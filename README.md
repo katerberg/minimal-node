@@ -6,7 +6,7 @@
 
 ```
 npm install
-npm build-ts
+npm run build-ts
 npm start
 ```
 
