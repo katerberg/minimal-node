@@ -6,6 +6,7 @@ import * as path from 'path';
 
 // Controllers (route handlers)
 import * as homeController from './controllers/home';
+import * as apiController from './controllers/api';
 
 // Create Express server
 const app = express();
@@ -27,5 +28,6 @@ app.use(
  * Primary app routes.
  */
 app.get('/', homeController.index);
+app.get('/api', apiController.api);
 
 export default app;
