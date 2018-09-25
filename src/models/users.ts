@@ -14,3 +14,5 @@ var users = mongoose.model('users', new Schema({
 	orgPhoneNumber: String,
 
 }));
+
+export {users};
