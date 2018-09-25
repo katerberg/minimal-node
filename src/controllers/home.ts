@@ -11,7 +11,7 @@ var db = mongoose.connection;
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
-	var query = users.findOne({ Worker : "Charlie Harris" }, function(err : Error, data : any) {
+	var query = users.findOne({ name : "Charlie Harris" }, function(err : Error, data : any) {
 		console.log(data);
 	});
 	console.log('it works!!');

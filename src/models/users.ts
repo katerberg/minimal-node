@@ -6,13 +6,10 @@ var Schema = mongoose.Schema;
 
 var users = mongoose.model('users', new Schema({
 
-	number: String,
-	telephone: String,
-	phoneNumber: String,
-	title: String,
-	organization: String,
-	orgPhoneNumber: String,
-
+	name: String,
+	phone: String,
+	email: String,
+  
 }));
 
 export {users};
