@@ -6,7 +6,7 @@ const db = mongoose.connection;
 
 
 
-export let api = (req: Request, res: Response) => {
+export let employees = (req: Request, res: Response) => {
 
   var query = users.find({}, function(err : Error, data : any) {
     let userData : [object] = data;

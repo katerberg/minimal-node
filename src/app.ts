@@ -28,6 +28,6 @@ app.use(
  * Primary app routes.
  */
 app.get('/', homeController.index);
-app.get('/api', apiController.api);
+app.get('/database/employees', apiController.employees);
 
 export default app;
