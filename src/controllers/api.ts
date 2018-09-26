@@ -4,12 +4,9 @@ import { users } from '../models/users';
 
 const db = mongoose.connection;
 
-
-
 export let employees = (req: Request, res: Response) => {
-
-  var query = users.find({}, function(err : Error, data : any) {
-    let userData : [object] = data;
-    res.status(200).send(userData);
-  });
+	const query = users.find({}, (err: Error, data: [object]) => {
+		const userData: [object] = data;
+		res.status(200).send(userData);
+	});
 };

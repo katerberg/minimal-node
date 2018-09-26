@@ -5,8 +5,8 @@ import * as expressValidator from 'express-validator';
 import * as path from 'path';
 
 // Controllers (route handlers)
-import * as homeController from './controllers/home';
 import * as apiController from './controllers/api';
+import * as homeController from './controllers/home';
 
 // Create Express server
 const app = express();
