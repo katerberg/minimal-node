@@ -11,7 +11,7 @@ describe('GET /random-url', () => {
 
 describe('GET /api/dabatase/employees', () => {
 	it('should return an JSON array Object', () => {
-		const theReturn: [object] = [{}];
+		const theReturn: object[] = [{}];
 		request(app)
 			.get('/api/dabatase/employees')
 			.expect(theReturn);
