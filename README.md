@@ -16,12 +16,18 @@ Make sure MongoDB process is running
 ```
 brew services list | grep mongod
 ```
-To start the mongoDB process
+If our database isn't running
 ```
 brew services start mongodb
 ```
+
+To install dos2unix
 ```
-cd src/data
+brew install dos2unix
+```
+
+```
+cd data
 dos2unix csv_import.sh
 ./csv_import.sh
 ```

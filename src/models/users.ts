@@ -1,5 +1,4 @@
 import { mongoose } from '../config/database';
-// import { Document, Model, Schema } from "mongoose";
 
 const Schema = mongoose.Schema;
 

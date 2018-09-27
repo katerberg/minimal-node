@@ -8,3 +8,12 @@ describe('GET /random-url', () => {
 			.expect(404, done);
 	});
 });
+
+describe('GET /api/dabatase/employees', () => {
+	it('should return an JSON array Object', () => {
+		const theReturn: [object] = [{}];
+		request(app)
+			.get('/api/dabatase/employees')
+			.expect(theReturn);
+	});
+});
