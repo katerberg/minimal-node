@@ -8,3 +8,11 @@ describe('GET /random-url', () => {
 			.expect(404, done);
 	});
 });
+
+describe('GET /home', () => {
+	it('should return 200', done => {
+		request(app)
+			.get('/')
+			.expect(200, done);
+	});
+});
