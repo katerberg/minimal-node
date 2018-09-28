@@ -12,6 +12,25 @@ npm start
 
 
 ## Setup
+Make sure MongoDB process is running
+```
+brew services list | grep mongod
+```
+If our database isn't running
+```
+brew services start mongodb
+```
+
+To install dos2unix
+```
+brew install dos2unix
+```
+
+```
+cd data
+dos2unix csv_import.sh
+./csv_import.sh
+```
 
 This project was set up with some tutorials:
 

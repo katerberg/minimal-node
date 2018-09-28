@@ -5,6 +5,7 @@ import * as expressValidator from 'express-validator';
 import * as path from 'path';
 
 // Controllers (route handlers)
+import * as apiController from './controllers/api';
 import * as homeController from './controllers/home';
 
 // Create Express server
@@ -27,5 +28,6 @@ app.use(
  * Primary app routes.
  */
 app.get('/', homeController.index);
+app.get('/api/database/employees', apiController.employees);
 
 export default app;
