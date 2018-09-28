@@ -8,7 +8,7 @@ import * as path from 'path';
 import * as homeController from './controllers/home';
 
 // Create Express server
-const app: Express = express();
+const app = express();
 
 // Express configuration
 app.set('port', process.env.PORT || 3000);
