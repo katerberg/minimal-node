@@ -20,18 +20,7 @@
                 "trace"
             ]
         },
-        "typedef": [
-          true,
-          "call-signature",
-          "arrow-call-signature",
-          "parameter",
-          "arrow-parameter",
-          "property-declaration",
-          "variable-declaration",
-          "member-variable-declaration",
-          "object-destructuring",
-          "array-destructuring"
-        ]
+        "no-inferrable-types": true
     },
     "rulesDirectory": [
       "node_modules/tslint-eslint-rules/dist/rules"
