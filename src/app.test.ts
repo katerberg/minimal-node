@@ -14,5 +14,14 @@ describe('GET /home', () => {
 		request(app)
 			.get('/')
 			.expect(200, done);
+  });
+});
+
+describe('GET /api/dabatase/employees', () => {
+	it('should return an JSON array Object', () => {
+		const theReturn: object[] = [{}];
+		request(app)
+			.get('/api/dabatase/employees')
+			.expect(theReturn);
 	});
 });
