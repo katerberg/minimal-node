@@ -11,6 +11,7 @@
     "start": "npm run build-ts && node dist/server.js",
     "build-ts": "tsc",
     "test": "jest --forceExit --coverage --verbose --detectOpenHandles",
+    "cleanup": "npm run tslint:fix && npm run prettier:fix",
     "prettier": "prettier 'src/**/*'",
     "prettier:ci": "npm run prettier -- -l",
     "prettier:fix": "npm run prettier -- --write",
