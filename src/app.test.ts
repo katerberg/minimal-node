@@ -14,7 +14,7 @@ describe('GET /home', () => {
 		request(app)
 			.get('/')
 			.expect(200, done);
-  });
+	});
 });
 
 describe('GET /api/dabatase/employees', () => {
