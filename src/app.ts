@@ -36,6 +36,6 @@ app.use((req, res, next) => {
  */
 app.get('/', homeController.index);
 app.get('/api/database/employees', apiController.employees);
-app.post('/api/database/employees/user', apiController.surveyInfo);
+app.post('/api/database/employees/user', apiController.postInfo);
 
 export default app;
