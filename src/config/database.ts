@@ -1,6 +1,7 @@
 import * as mongoose from 'mongoose';
-import { users } from '../models/users';
 
+
+mongoose.Promise = global.Promise;mongoose.connect("mongodb://localhost/directory");
 mongoose.connect(
 	'mongodb://localhost/directory',
 	{ useNewUrlParser: true }
