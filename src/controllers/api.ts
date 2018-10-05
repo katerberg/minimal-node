@@ -13,7 +13,7 @@ export let employees = (req: Request, res: Response) => {
 };
 
 export let postInfo = (req: Request, res: Response) => {
-	 var newUserInfo = new surveyInfo(req.body);
+	 const newUserInfo = new surveyInfo(req.body);
 	 newUserInfo.save()
 	 .then(item => {
 	 	res.send({status: 200, message: "success"});
