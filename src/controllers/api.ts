@@ -13,12 +13,18 @@ export let employees = (req: Request, res: Response) => {
 };
 
 export let postInfo = (req: Request, res: Response) => {
-	 const newUserInfo = new surveyInfo(req.body);
-	 newUserInfo.save()
-	 .then(item => {
-	 	res.send({status: 200, message: "success"});
-	 })
-	 .catch(err => {
-	 	res.status(400).send("unable to save to database");
-	 });
+
+	users.find({'email': { "$regex": req.body.email, "$options": "i" }}, (err: Error, data: object[]) => {
+		console.log(data);
+		res.status(200).send(data);
+	});
+
+ 	const newUserInfo = new surveyInfo(req.body);
+ 	newUserInfo.save()
+ 	.then(item => {
+ 		res.send({status: 200, message: "success"});
+ 	})
+ 	.catch(err => {
+ 		res.status(400).send("unable to save to database");
+ });
 };
